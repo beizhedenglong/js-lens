@@ -7,7 +7,7 @@ import json from 'rollup-plugin-json'
 
 const pkg = require('./package.json')
 
-const libraryName = 'nested-object'
+const libraryName = 'js-lens'
 
 export default {
   input: `src/${libraryName}.ts`,

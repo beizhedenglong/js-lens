@@ -7,4 +7,4 @@ export { default as over } from './over'
 
 export { default as lensPath } from './lensPath'
 
-export { default as composeLens } from './lensCompose'
+export { default as lensCompose } from './lensCompose'

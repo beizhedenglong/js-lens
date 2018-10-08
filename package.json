@@ -1,18 +1,26 @@
 {
-  "name": "nested-object",
+  "name": "js-lens",
   "version": "0.0.0",
   "description": "",
-  "keywords": [],
-  "main": "dist/nested-object.umd.js",
-  "module": "dist/nested-object.es5.js",
-  "typings": "dist/types/nested-object.d.ts",
+  "keywords": [
+    "ramda",
+    "accessing",
+    "set",
+    "immutable",
+    "compose",
+    "nested-objects"
+  ],
+  "main": "dist/js-lens.umd.js",
+  "module": "dist/js-lens.es5.js",
+  "typings": "dist/types/js-lens.d.ts",
   "files": [
     "dist"
   ],
   "author": "Victor Wang(wang shaojie) <wang_shaojie@icloud.com>",
+  "homepage": "https://github.com/beizhedenglong/js-lens",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/beizhedenglong/js-lens"
   },
   "license": "MIT",
   "engines": {
