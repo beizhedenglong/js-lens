@@ -50,7 +50,7 @@ describe("lensPath", () => {
   });
   describe('composability', function () {
     it('can be composed', function () {
-      const composedLens = lensCompose(lensPath([1, 'b']), lensPath(['a']));
+      const composedLens = lensCompose(lensPath(['a']), lensPath([1, 'b']));
       const aLens = lensCompose(lensPath(["a"]))
       expect(view(composedLens, testObj)).toBe(2)
       expect(set(composedLens, 123, testObj)).toEqual({ a: [{ b: 1 }, { b: 123 }], d: 3 })

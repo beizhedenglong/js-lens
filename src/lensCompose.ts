@@ -12,11 +12,8 @@ const lensCompose = (...lenses: lensType[]): lensType => {
     return lenses[0]
   }
   return lenses.reduce((acc, lens) => ({
-    get: x => acc.get(lens.get(x)),
-    set: (v, x) => lens.set(
-      acc.set(v, lens.get(x)),
-      x
-    )
+    get: x => lens.get(acc.get(x)),
+    set: (v, x) => acc.set(lens.set(v, acc.get(x)),x)
   }))
 }
 
